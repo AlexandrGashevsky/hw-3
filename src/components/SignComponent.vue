@@ -10,12 +10,7 @@
 </template>
 
 <script>
-export default {
-  props: ["name"],
-  data() {
-    return {};
-  },
-};
+export default {};
 </script>
 
 <style></style>

@@ -19,7 +19,7 @@ import SignComponent from "./SignComponent.vue";
         v-on:input="(newFiltersState) => (secondNumber = newFiltersState.data)"
       />
     </div>
-    <p>Result: {{ count(this.firstNumber, this.secondNumber, this.sign) }}</p>
+    <p>Result: {{ count(firstNumber, secondNumber, sign) }}</p>
   </div>
 </template>
 
