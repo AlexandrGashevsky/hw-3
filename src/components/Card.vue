@@ -8,7 +8,7 @@ import SignComponent from "./SignComponent.vue";
     <div class="top">
       <InputComponent
         v-bind:value="firstNumber"
-        v-on:input="(newFiltersState) => (firstNumber = newFiltersState.data)"
+        @input-number="(event) => (firstNumber = event)"
       />
       <SignComponent
         v-bind:value="sign"
@@ -16,7 +16,7 @@ import SignComponent from "./SignComponent.vue";
       />
       <InputComponent
         v-bind:value="secondNumber"
-        v-on:input="(newFiltersState) => (secondNumber = newFiltersState.data)"
+        @input-number="(event) => (secondNumber = event)"
       />
     </div>
     <p>Result: {{ count(firstNumber, secondNumber, sign) }}</p>

@@ -7,6 +7,8 @@
     onkeydown="return false"
     onpaste="return false;"
     ondrop="return false;"
+    
+    @input="$emit( 'inputNumber' , $event.target.value)"
   />
 </template>
 
